@@ -22,7 +22,7 @@ class Product(models.Model):
     category = models.ForeignKey(to=ProductCategory, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'Продукт: {self.name} | Категория: {self.category.name}'
+        return f'{self.name} | Категория: {self.category.name}'
 
     class Meta:
         verbose_name = 'Товар'
