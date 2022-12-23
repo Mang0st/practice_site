@@ -62,11 +62,15 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
+                                {% if product.category.name == 'Новинки' %}
+                                <p style="color: red; font-size: 70% ;" class="text-center">Новинка</p>
+                                {% endif %}
                                 <a href="#">{{ product.name }}</a>
                             </h4>
                             <h5>{{ product.price }} руб.</h5>
                             <p class="card-text">{{ product.description }}</p>
                         </div>
+
                         <div class="card-footer text-center">
                             <button type="button" class="btn btn-outline-success">Отправить в корзину</button>
                         </div>
