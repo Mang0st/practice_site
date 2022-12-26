@@ -35,9 +35,10 @@
                 <div class="form-row mb-2">
                     <div class="col-lg-12">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="userAvatar" size="50">
-                            <label class="custom-file-label" for="{{form.image.id_for_label }}">Выберите
-                                изображение</label>
+                            {{ form.image }}
+                            <label class="custom-file-label" for="{{ form.image.id_for_label }}">
+                                Выберите изображение
+                            </label>
                         </div>
                     </div>
                 </div>
